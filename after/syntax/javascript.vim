@@ -8,3 +8,5 @@ hi! link jsThis Identifier
 hi! link jsFunction Statement
 hi! link jsFuncCall Type
 hi! link jsGlobalObjects Identifier 
+hi! link jsImport Statement 
+hi! link jsFrom Statement 

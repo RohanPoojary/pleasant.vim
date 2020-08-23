@@ -1,8 +1,5 @@
-
 set background=dark
 hi clear
-let &t_ZH="\e[3m"
-let &t_ZR="\e[24m"
 
 if exists("syntax_on")
   syntax reset
@@ -57,6 +54,16 @@ let s:yellow_bg = g:pleasant#palette.yellow_bg
 let s:green_bg = g:pleasant#palette.green_bg
 let s:blue_bg = g:pleasant#palette.blue_bg
 
+let s:bold = "NONE"
+if exists("g:pleasant_bold") && g:pleasant_bold == 1
+    let s:bold = "bold"
+endif
+
+let s:italic = "NONE"
+if exists("g:pleasant_italic") && g:pleasant_italic == 1
+    let s:italic = "italic"
+endif
+
 " Palette End: End of local palette.
 
 call s:Hi('PleasantFg', s:white)
@@ -74,6 +81,9 @@ call s:Hi('PleasantWeeds', s:weeds)
 call s:Hi('PleasantOcean', s:ocean)
 call s:Hi('PleasantOceanLight', s:ocean_light)
 call s:Hi('PleasantPebble', s:pebble)
+
+call s:Hi('PleasantOceanBold', s:ocean, s:none, s:bold, s:bold)
+call s:Hi('PleasantOceanLightItalic', s:ocean_light, s:none, s:italic, s:italic)
 
 call s:Hi('PleasantRedBg', s:none, s:red_bg)
 call s:Hi('PleasantOrangeBg', s:none, s:orange_bg)
@@ -96,7 +106,8 @@ hi! link Comment PleasantBgLighter
 hi! link LineNr PleasantSand
 hi! link LineNrBelow PleasantGrey
 hi! link LineNrAbove LineNrBelow
-hi! link Directory PleasantOcean
+
+hi! link Directory PleasantOceanBold
 
 if has('nvim') 
     hi! link LineNr PleasantGrey
@@ -125,7 +136,7 @@ hi! link VertSplit PleasantBgLighter
 call s:Hi('Folded', s:bg, s:bg_lighter)
 hi! link FoldColumn Folded
 
-hi! link Identifier PleasantOceanLight
+hi! link Identifier PleasantOceanLightItalic
 hi! link Function PleasantSandLight
 " hi! link MatchParen PleasantMud
 call s:Hi('MatchParen', s:none, s:bg_lighter)
@@ -159,13 +170,13 @@ hi! link Special PleasantWeeds
 " hi! link Debug PleasantWeeds
 
 
-hi! link PreProc PleasantOceanLight
+hi! link PreProc PleasantOceanLightItalic
 " INFO: Adding inferred links for reference.
-" hi! link PreProc PleasantOceanLight
-" hi! link Include PleasantOceanLight
-" hi! link Define PleasantOceanLight
-" hi! link Macro PleasantOceanLight
-" hi! link PreCondit PleasantOceanLight
+" hi! link PreProc PleasantOceanLightItalic
+" hi! link Include PleasantOceanLightItalic
+" hi! link Define PleasantOceanLightItalic
+" hi! link Macro PleasantOceanLightItalic
+" hi! link PreCondit PleasantOceanLightItalic
 
 call s:Hi('Underlined', s:ocean_light, s:none, 'underline', 'underline')
 call s:Hi('Ignore', s:bg_lighter)
