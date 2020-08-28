@@ -37,12 +37,25 @@ Color schemes for whole ton of Languages and Plugins has to be added.
 Also I mainly work on Golang, Python & Rust. So, have tweaked the scheme mainly for them. A lot of work has to be done & any PR is accepted.
 
 # Screenshots
-Screen shots to be added.
+The font used is ever awesome [Fira Code](https://github.com/tonsky/FiraCode).
 
 ### Golang
+![Golang Image](https://user-images.githubusercontent.com/13658649/91580998-875ccd80-e96b-11ea-9fbd-991690acf143.png)
+
 ### Rust
+![Rust Image](https://user-images.githubusercontent.com/13658649/91581349-f6d2bd00-e96b-11ea-887b-846c91837465.png)
+
 ### Python
+To be added
+
 ### Javascript
+![Javascript Image](https://user-images.githubusercontent.com/13658649/91582253-2a621700-e96d-11ea-9ff5-40714bd430b3.png)
+
 ### HTML
+![HTML Image](https://user-images.githubusercontent.com/13658649/91584806-cfcaba00-e970-11ea-9eec-3329da1a26be.png)
+
 ### CSS
+![CSS Image](https://user-images.githubusercontent.com/13658649/91582389-609f9680-e96d-11ea-8b25-366ef0aab4d0.png)
+
 ### Diff
+To be added
