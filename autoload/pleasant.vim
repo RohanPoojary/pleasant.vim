@@ -21,8 +21,8 @@ let g:pleasant#palette.bg_lighter = ['#495262', 240] " Lab: 35, 0, -10
 
 " Base Colored Backgrounds.
 let g:pleasant#palette.red_bg = ['#640623', 52] " Lab: 20, 40, 10
-let g:pleasant#palette.orange_bg = ['#472900', 52] " Lab: 20, 10, 30
-let g:pleasant#palette.yellow_bg = ['#552200', 52] " Lab: 20, 20, 50
+let g:pleasant#palette.yellow_bg = ['#472900', 52] " Lab: 20, 10, 30
+let g:pleasant#palette.orange_bg = ['#552200', 52] " Lab: 20, 20, 50
 let g:pleasant#palette.blue_bg = ['#2E2C4D', 237] " Lal: 20, 10, -20
 let g:pleasant#palette.green_bg = ['#0D3900', 22] " Lal: 20, -30, 40
 
